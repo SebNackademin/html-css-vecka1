@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(220, 220, 220);
+    margin: 0px;
+}
+
+.table-style {
+    border: 3px;
+    border-style: dotted;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+.section {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+.block1 {
+    background-color: rgb(220, 220, 220);
+}
+
+.block2 {
+    background-color: rgb(199, 199, 199);
+}
+
+.img-placeholder {
+    background-color: blueviolet;
+}
+
+.box-container {
+    display: inline-block;
+    background-color: red;
+    width: 400px;
+    height: 200px;
+}
+.box {
+    background-color: yellow;
+    width: calc(100% - 120px);
+    height: calc(100% - 120px);
+    margin: 30px;
+    padding: 30px;
+}
+.box-content {
+    background-color: blue;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    margin: 15px;
+}
+
+.box-content-upper-left {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.box-content-upper-right {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.box-content-bottom-left {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+.box-conten-bottom-right {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}

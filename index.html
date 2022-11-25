@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-------------------------------------------------------------
+    0. Kunskapskrav DOCTYPE & head: 
+        Grundläggande förståelse varför vi behöver 
+        specificera <!DOCTYPE html> och vad:
+        - meta taggarna har för uppgift och vilka som är viktiga
+          att ha med vanligtvis i ett projekt.
+        - title taggen har för funktion
+        - link taggen har för funktion
+
+        Varför lägger vi dessa i head taggen och inte i body taggen?
+-------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-------------------------------------------------------------
+        1. Kunskapskrav "Text objekt":
+            Förstå hur och när man använder vilka text taggar,
+            samt förstå att "grund stylingen" för taggar är
+            mer av en guideline än färdiga förformaterade objekt.
+            Exempel, använd inte h4 för att den råkar ha en passlig
+            storlek i ditt projekt. Är det inte en underrubrik t ex, 
+            använd h1 och korrigera med CSS istället.
+    -------------------------------------------------------------->
+
+    <div id="header-example" class="block1 section">
+        <!-- 
+            Header tags:
+            https://www.w3schools.com/html/html_headings.asp
+
+            Exempel:
+        -->
+        <h1>Titel med prio 1</h1>
+        <h2>Titel med prio 2</h2>
+        <h3>Titel med prio 3</h3>
+        <h4>Titel med prio 4</h4>
+        <h5>Titel med prio 5</h5>
+        <h6>Titel med prio 6</h6>
+    </div>
+
+    <div id="paragraph-example" class="block2 section">
+        <!-- 
+            Paragraph tag:
+            https://www.w3schools.com/html/html_paragraphs.asp
+
+            Exempel:
+        -->
+        <p>
+            En paragraf text
+        </p>
+    </div>
+
+    <div id="formatting-example" class="block1 section">
+        <!-- 
+            Formatting elements:
+            https://www.w3schools.com/html/html_formatting.asp
+
+            Exempel:
+        -->
+        <em>
+            En "emphasized" text
+        </em>
+        <p>
+            H<sub>2</sub>0
+        </p>
+    </div>
+
+    <!-------------------------------------------------------------
+        2. Kunskapskrav "Semantiska taggar":
+            Förstå hur och när man använder vilka semantiska taggar
+            och anledningen till varför man använder dem.
+    -------------------------------------------------------------->
+
+    <div id="semantics-example" class="block2 section">
+        <!--
+            Semantic elements:
+            https://www.w3schools.com/html/html5_semantic_elements.asp
+
+            Exempel:
+        -->
+        <main>
+            <header>
+                <h1>Min huvudtitel</h1>
+            </header>
+            <nav>
+                <a href="#">länk 1</a>
+                <a href="#">länk 2</a>
+                <a href="#">länk 3</a>
+            </nav>
+            <article>
+                <p>
+                    Min fantastiska text om dinosaurier
+                </p>
+            </article>
+            <footer>
+                &copy; Copyright Någon
+            </footer>
+        </main> 
+    </div>
+
+    <!-------------------------------------------------------------
+        3. Kunskapskrav "Bilder":
+            Kunna använda img taggen och manipulera dess storlek
+    -------------------------------------------------------------->
+
+    <div id="iamges-example" class="block1 section">
+        <img width="200" height="100" class="img-placeholder">
+        <img src="assets/castle.png" width="100" height="100">
+        <img src="assets/non-existing.png" width="200" height="100" alt="Text that shows when image couldn't be found">
+    </div>
+
+    <!-------------------------------------------------------------
+        4. Kunskapskrav "Container" taggar:
+            Kunna använda taggarna div och span och förstå skillnaden
+            samt varför man använder dessa. <div> har förinställt
+            css propertyn "display: block;" medans <span> har förinställt
+            "display: inline;".
+    -------------------------------------------------------------->
+
+    <div id="containers-example" class="block2 section">
+        <div>div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+        <span>span 1</span>
+        <span>span 2</span>
+        <span>span 3</span>
+    </div>
+
+    <!-------------------------------------------------------------
+        5. Kunskapskrav "Hyperlink" taggar:
+            Kunna använda taggen <a> och kunna byta mellan html
+            sidor. Även hur man öppnar i samma sida men också i nytt
+            fönster / flik.
+    -------------------------------------------------------------->
+
+    <div id="links-example" class="block1 section">
+        <p>
+            <a href="http://google.se">Länk till google</a>
+        </p>
+        <p>
+            <a href="http://google.se" target="_blank">Länk till google i en ny flik</a>
+        </p>
+        <p>
+            <a href="/page2.html">Länk till sida 2</a>
+        </p>
+    </div>
+
+    <!-------------------------------------------------------------
+        5. Kunskapskrav "Boxmodellen":
+            Förstå sig på hur elementen tar upp plats i dokumentet
+            enligt boxmodellen. Ni kan inspektera modellen för vardera
+            objekt med hjälp av utvecklingsverktyget i eran browser.
+            Viktigt att förstå skillnaden mellan margin och padding.
+
+            NOTERA: Ni behöver inte förstå css:n kopplad till exemplet
+            nedan, den är skapad för att visa visuellt.
+    -------------------------------------------------------------->
+
+    <div id="box-example" class="block2 section">
+        <div class="box-container">
+            <div class="box">
+                <div class="box-content">
+                    <!-- CONTENT HERE -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------
+        6. Bonus "Tabeller" taggar:
+            Kunna använda taggarna <table> <th> <tr> och <td> för att
+            skapa tabeller.
+    -------------------------------------------------------------->
+
+    <div id="tables-example" class="block1 section">
+        <table class="table-style">
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>Efternamn</th>
+                    <th>Hobby</th>
+                    <th>Favoritfärg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kalle</td>
+                    <td>Anka</td>
+                    <td>Fotboll</td>
+                    <td>Gul</td>
+                </tr>
+                <tr>
+                    <td>Kajsa</td>
+                    <td>Anka</td>
+                    <td>Kampsport</td>
+                    <td>Grön</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!------------------------------------------------------------->
+
+</body>
+
+</html>
